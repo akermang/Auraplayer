@@ -1,0 +1,1 @@
+handlerMap=[{"key":"","element":"","action":"onload","attr":"http://54.202.142.199:7001/ServiceManager/Macro/ExecMacro/mcs_getCustomer","initHandler":"","responseHandler":"","failureHandler":"popupErrors:"},{"key":"","element":"Orders","eventAttrs":["top","100"],"action":"navigate","attr":"Orders.html","initHandler":"","responseHandler":"","failureHandler":""}];

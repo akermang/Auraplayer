@@ -1,0 +1,1 @@
+handlerMap=[{"key":"","element":"Login","eventAttrs":["bottom","100"],"action":"webservice","attr":"http://54.202.142.199:7001/ServiceManager/Macro/ExecMacro/mcs_Login","initHandler":"","responseHandler":"popupAndNavigate:Login Success:CustomerList.html","failureHandler":"popup:Login Failed, please retry"}];
