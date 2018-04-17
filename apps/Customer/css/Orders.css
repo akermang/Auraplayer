@@ -9,6 +9,11 @@ text-align: left !important;
 background-color: #ffffff !important;
 }
 
+table#tableOutput{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 button {
 text-shadow: none !important;
 }
