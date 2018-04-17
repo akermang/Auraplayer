@@ -3,363 +3,42 @@
 <html lang="en" class="ui-mobile ui-loading">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta http-equiv="Pragma" content="no-cache"> 
-  <meta http-equiv="Expires" content="0"> 
-  <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate"> 
-  <meta http-equiv="last-modified" content="1523364293843"> 
-  <meta name="Created-By" content="manager"> 
-  <meta name="Creation-Timestamp" content="1523364293843"> 
-  <!-- CSS imports --> 
-  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile-1.4.5.min.css"> 
-  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile.theme-1.4.5.min.css"> 
-  <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css"> 
-  <link rel="stylesheet" href="../../res/nativeDroid/css/nativedroid2.css"> 
-  <link rel="stylesheet" href="../../res/bootstrap/css/bootstrap.min.css"> 
-  <link rel="stylesheet" href="../../res/auraplayer/android.css"> 
-  <link rel="stylesheet" href="../../res/auraplayer/hamburger.css"> 
-  <!-- Javascript imports --> 
-  <script type="text/javascript" src="../../res/jquery/jquery.min.js"></script> 
-  <script type="text/javascript" src="../../res/jquery/jquery-dateFormat.min.js"></script> 
-  <script type="text/javascript" src="../../res/jqueryMobile/jquery.mobile-1.4.5.min.js"></script> 
-  <script type="text/javascript" src="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.js"></script> 
-  <script type="text/javascript" src="../../res/nativeDroid/js/nativedroid2.js"></script> 
-  <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> --> 
-  <!-- AuraPlayer imports --> 
-  <script type="text/javascript" src="../../res/dist/auraplayer.js"></script> 
-  <script type="text/javascript" src="js/app.common.js"></script> 
-  <script type="text/javascript" src="json/handlerMap_1523364293843.json"></script> 
-  <script type="text/javascript" src="js/custom_js_1523364293843.js"></script> 
-    <style>
-        @media (max-width: 550px) {
-            #pageTitle {
-                margin-left: 120px;
-                text-align: left !important;
-            }
-        }
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate">
+    <meta http-equiv="last-modified" content="1523364293843">
+    <meta name="Created-By" content="manager">
+    <meta name="Creation-Timestamp" content="1523364293843">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile.theme-1.4.5.min.css">
+    <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css">
+    <link rel="stylesheet" href="../../res/nativeDroid/css/nativedroid2.css">
+    <link rel="stylesheet" href="../../res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../res/auraplayer/android.css">
+    <link rel="stylesheet" href="../../res/auraplayer/hamburger.css">
+    <link rel="stylesheet" href="css/Login.css">
 
-        .body {
-            background-color: #ffffff !important;
-        }
-
-        div #mainPage.ui-page.ui-page-theme-a.ui-page-active {
-            min-height: 588px;
-        }
-
-        div.logo-link-wraper {
-            padding: 12px 8px;
-        }
-
-        a img#logo-link-img {
-            width: 120px;
-        }
-
-        div.header-title.login-title {
-            padding: 12px 8px;
-            color: #ffffff;
-        }
-
-        .login-title h3#pageTitle {
-            text-align: center;
-        }
-
-        div.login-empty-line {
-            padding: 12px 8px;
-        }
-
-        div.login-empty-line div.font-declaration {
-            font-size: 20px;
-            font-family: arial, serif;
-            color: #ffffff;
-        }
-
-        form#form1 {
-            width: 98%;
-        }
-
-        div#responseField {
-            padding: 12px 8px;
-        }
-
-        form#responseForm {
-            width: 100%;
-        }
-
-        span.spn-login-form {
-            display: inline-block;
-            width: 98.0%;
-        }
-
-        span.spn-login-form label {
-            color: #696969;
-        }
-
-        .clr-primary.ui-btn-raised.ui-btn#Login {
-            padding: 12px 8px;
-            margin: 12px 0px;
-            color: #ffffff;
-            display: inline-block;
-            width: 98.0% !important;
-            border-radius: 30px;
-        }
-
-        div#infoPopup-placeholder,
-        div#confirmPopup-placeholder {
-            display: none;
-        }
-
-        div.ui-popup.ui-body-a#confirmPopup,
-        div.ui-popup.ui-body-a#infoPopup {
-            max-width: 400px;
-        }
-
-        div.pad-div-10 {
-            padding: 10px;
-        }
-
-        span.paded-spn {
-            padding: 1px;
-        }
-
-        a#titleRow-button.ui-btn {
-            color: #ffffff;
-            visibility: hidden;
-        }
-
-        button {
-            text-shadow: none !important;
-        }
-
-        .ui-input-text input:focus,
-        .ui-input-search input:focus {
-            border-bottom-color: #329999;
-        }
-
-        input[required]:invalid {
-            border-bottom: 2px solid #B94A48 !important;
-        }
-
-        .ui-overlay-a,
-        .ui-page-theme-a,
-        .ui-page-theme-a .ui-panel-wrapper {
-            background-color: #ffffff !important;
-        }
-
-        .ui-overlay-b,
-        .ui-page-theme-b,
-        .ui-page-theme-b .ui-panel-wrapper {
-            background-color: #ffffff !important;
-        }
-
-        .nd2-bg-500 {
-            background-color: #329999;
-            color: #ffffff;
-        }
-
-        .ui-page-theme-a .ui-header {
-            background-color: #329999;
-            color: #ffffff;
-        }
-
-        .ui-page-theme-b .ui-header {
-            background-color: #329999;
-            color: #ffffff;
-        }
-
-        .ui-page-theme-a .ui-footer {
-            background-color: #ffffff;
-            color: #323232;
-            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-        }
-
-        li.ui-tabs-active>.ui-link.ui-btn.ui-tabs-anchor,
-        .ui-page-theme-a .ui-btn.clr-primary {
-            color: #329999;
-        }
-
-        .ui-page-theme-a a,
-        html .ui-bar-a a,
-        html .ui-body-a a,
-        html body .ui-group-theme-a a,
-        .ui-page-theme-a a:hover,
-        html .ui-bar-a a:hover,
-        html .ui-body-a a:hover,
-        html body .ui-group-theme-a a:hover,
-        .ui-page-theme-a a:visited,
-        html .ui-bar-a a:visited,
-        html .ui-body-a a:visited,
-        html body .ui-group-theme-a a:visited {
-            color: #329999;
-        }
-
-        .ios-btn {
-            background-color: #329999 !important;
-        }
-
-        .ui-page-theme-b .ui-btn,
-        html .ui-bar-b .ui-btn,
-        html .ui-body-b .ui-btn,
-        html body .ui-group-theme-b .ui-btn,
-        html head+body .ui-btn.ui-btn-b,
-        .ui-page-theme-b .ui-btn:visited,
-        html .ui-bar-b .ui-btn:visited,
-        html .ui-body-b .ui-btn:visited,
-        html body .ui-group-theme-b .ui-btn:visited,
-        html head+body .ui-btn.ui-btn-b:visited {
-            background-color: #329999;
-        }
-
-        .ui-page-theme-a .ui-btn.clr-warning {
-            color: rgb(244, 67, 54);
-        }
-
-        .ui-page-theme-a .ui-btn.ui-btn-raised.clr-primary {
-            background-color: #329999;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .ui-page-theme-a .ui-btn.ui-btn-raised.clr-warning {
-            background-color: rgb(244, 67, 54);
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .ui-page-theme-a .ui-radio .ui-btn.ui-radio-on:before {
-            background-color: #329999;
-        }
-
-        .ui-page-theme-a .ui-btn.ui-radio-on:after {
-            border-color: #329999;
-        }
-
-        html body .ui-page-theme-a .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
-            background-color: #329999;
-            border-color: #329999;
-        }
-
-        .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-checkbox-on,
-        .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn.ui-radio-on {
-            background-color: #329999;
-            color: #ffffff;
-        }
-
-        .ui-input-text.ui-focus:after,
-        .ui-input-search.ui-focus:after {
-            background-color: #329999;
-            height: 2px;
-        }
-
-        textarea.ui-input-text.ui-textinput-autogrow.ui-focus {
-            border-bottom: 2px solid #329999;
-        }
-
-        .ui-page-theme-a .ui-flipswitch-active,
-        html .ui-bar-a .ui-flipswitch-active,
-        html .ui-body-a .ui-flipswitch-active,
-        html body .ui-group-theme-a .ui-flipswitch-active,
-        html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active {
-            color: #ffffff !important;
-            background-color: #329999 !important;
-        }
-
-        .ui-page-theme-a .ui-slider-track .ui-btn-active,
-        html .ui-bar-a .ui-slider-track .ui-btn-active,
-        html .ui-body-a .ui-slider-track .ui-btn-active,
-        html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
-        html body div.ui-slider-track.ui-body-a .ui-btn-active,
-        .ui-slider-track .ui-btn.ui-slider-handle {
-            background-color: #329999 !important;
-        }
-
-        .ui-page-theme-b .ui-btn:hover,
-        html .ui-bar-b .ui-btn:hover,
-        html .ui-body-b .ui-btn:hover,
-        html body .ui-group-theme-b .ui-btn:hover,
-        html head+body .ui-btn.ui-btn-b:hover {
-            background-color: #329999 !important;
-        }
-
-        .ui-content.login-cont {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        #responsePart {
-            display: none;
-        }
-
-        #spacerAbovePopups {
-            height: 30px;
-        }
-
-        .row#requestFields {
-            padding: 12px 8px;
-        }
-    </style>
+    <!-- Javascript imports -->
+    <script type="text/javascript" src="../../res/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../res/jquery/jquery-dateFormat.min.js"></script>
+    <script type="text/javascript" src="../../res/jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.js"></script>
+    <script type="text/javascript" src="../../res/nativeDroid/js/nativedroid2.js"></script>
+    <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- AuraPlayer imports -->
+    <script type="text/javascript" src="../../res/dist/auraplayer.js"></script>
+    <script type="text/javascript" src="js/app.common.js"></script>
+    <script type="text/javascript" src="json/handlerMap_1523364293843.json"></script>
+    <script type="text/javascript" src="js/custom_js_1523364293843.js"></script>
+    <!-- moved to js folder -->
+    <script type="text/javascript" src="js/Login.js"></script>
 </head>
 
 <body dir="LTR" id="mainBody" class="ui-mobile-viewport ui-overlay-a">
-    <script type="text/javascript">
-        var showStatusMessages = false;
-        var origRequestFields;
-
-        $(function () {
-            origRequestFields = $('#requestFields').clone();
-            setDefaultValues();
-            initData();
-            validateRequiredFields();
-
-            $('input').on('input blur', function () {
-                setTimeout(validateRequiredFields, 200);
-            });
-        });
-
-        var defaultValues = {};
-        defaultValues['MAIN_USERNAME_0'] = {
-            value: 'MIA',
-            type: 'text'
-        };
-
-        defaultValues['MAIN_PASSWORD_0'] = {
-            value: 'ORACLE',
-            type: 'password'
-        };
-
-        function showInputScreen() {
-            setDefaultValues();
-            refreshInputElements();
-
-            $("#requestPart").show();
-            $("#responsePart").hide();
-
-            clearOutputFields();
-        }
-
-        //handler for request sent
-        function sendRequestHandler() {
-            document.getElementById("responsePart").style.display = 'none';
-            spinner().start("Executing..", "a");
-        }
-
-        //handler for response received
-        function receiveResponseHandler(response, serviceName, status, populateFields) {
-            spinner().stop();
-
-            if (typeof (populateFields) === 'undefined' || populateFields) {
-                //show output params
-
-                document.getElementById("responsePart").style.display = '';
-                validateRequiredFields();
-            }
-        }
-
-        //init function
-        $(function () {
-            removeDuplicatedFields();
-        });
-    </script>
-
     <div id="mainPage" data-role="page" data-theme="a" class="ui-page ui-page-theme-a ui-page-active" data-url="mainPage" tabindex="0">
         <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
             <div class="container-fluid">
