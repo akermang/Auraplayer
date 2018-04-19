@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css">
     <link rel="stylesheet" href="../../res/nativeDroid/css/nativedroid2.css">
     <link rel="stylesheet" href="../../res/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../res/auraplayer/android.css">
-    <link rel="stylesheet" href="../../res/auraplayer/hamburger.css">
-    <link rel="stylesheet" href="css/Login.css">
+    <!-- <link rel="stylesheet" href="../../res/auraplayer/android.css"> -->
+    <!-- <link rel="stylesheet" href="../../res/auraplayer/hamburger.css"> -->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Javascript imports -->
     <script type="text/javascript" src="../../res/jquery/jquery.min.js"></script>
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="../../res/jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.js"></script>
     <script type="text/javascript" src="../../res/nativeDroid/js/nativedroid2.js"></script>
-    <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script>
     <!-- AuraPlayer imports -->
     <script type="text/javascript" src="../../res/dist/auraplayer.js"></script>
     <script type="text/javascript" src="js/app.common.js"></script>
@@ -40,72 +40,70 @@
 
 <body dir="LTR" id="mainBody" class="ui-mobile-viewport ui-overlay-a">
     <div id="mainPage" data-role="page" data-theme="a" class="ui-page ui-page-theme-a ui-page-active" data-url="mainPage" tabindex="0">
+        <!-- header -->
         <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
             <div class="container-fluid">
                 <div class="row">
-                    <a id="titleRow-button" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#leftpanel" class="ui-btn">
+                    <a id="titleRow-button" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#leftpanel" class="d-none">
                         <h3>☰</h3>
                     </a>
-                    <div class="logo-link-wraper col-xs-1">
+                    <div class="logo-link-wraper pad-size-1 col-xs-1">
                         <a href="javascript:navigate(&#39;Login.html&#39;)" class="ui-link">
-                            <img id="logo-link-img" src="../../www/img/logo4.png">
+                            <img id="logo-link-img" class="logo-link-img-sm" src="../../www/img/logo4.png">
                         </a>
                     </div>
-                    <div class="header-title login-title col-xs-9">
-                        <h3 id="pageTitle">Login</h3>
+                    <div class="col-xs-9 pad-size-1">
+                        <h3 class="text-center" id="pageTitle">Login</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="main" class="ui-content login-cont">
-            <div class="container-fluid">
-                <div class="login-empty-line row">
-                    <div class="font-declaration"></div>
-                </div>
-                <div>
-                    <div id="requestPart" name="requestPart">
-                        <div class="row" id="requestFields">
-                            <form id="form1">
-                            </form>
+        
+        <div class="row align-items-center">
+            <div data-role="main" class="container-fluid col-lg-4">
+                <div class="container-fluid">
+                    <div>
+                        <div id="requestPart" name="requestPart">
+                            <dsiv class="row responseField pad-size-1" id="responseField" class="responseField pad-size-1">
+                                <form id="responseForm" class="responseForm1">
+                                    <span class="responseField spn-login-form" id="MAIN_USERNAME_0_container">
+                                        <label for="MAIN_USERNAME_0">
+                                            <nobr>
+                                                Name
+                                            </nobr>
+                                        </label>
+                                        <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                            <input id="MAIN_USERNAME_0" name="Name" type="text" value="MIA" class="output_value" required="">
+                                        </div>
+                                    </span>
+                                    <span class=" responseField spn-login-form" id="MAIN_PASSWORD_0_container">
+                                        <label for="MAIN_PASSWORD_0">
+                                            <nobr>
+                                                Password
+                                            </nobr>
+                                        </label>
+                                        <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                            <input id="MAIN_PASSWORD_0" name="Password" type="password" value="ORACLE" class="output_value">
+                                        </div>
+                                    </span>
+                                </form>
+                            </div>
                         </div>
-                        <div class="row" id="responseField">
-                            <form id="responseForm">
-                                <span class="responseField spn-login-form" id="MAIN_USERNAME_0_container">
-                                    <label for="MAIN_USERNAME_0">
-                                        <nobr>
-                                            Name
-                                        </nobr>
-                                    </label>
-                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
-                                        <input id="MAIN_USERNAME_0" name="Name" type="text" value="MIA" class="output_value" required="">
-                                    </div>
-                                </span>
-                                <span class=" responseField spn-login-form" id="MAIN_PASSWORD_0_container">
-                                    <label for="MAIN_PASSWORD_0">
-                                        <nobr>
-                                            Password
-                                        </nobr>
-                                    </label>
-                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
-                                        <input id="MAIN_PASSWORD_0" name="Password" type="password" value="ORACLE" class="output_value">
-                                    </div>
-                                </span>
-                            </form>
+                        <div id="responsePart" name="responsePart">
+                            <div id="spacerAbovePopups"></div>
                         </div>
+                        <button id="Login" class="clr-primary ui-btn-raised ui-btn border-r-size-1 pad-size-1">Login </button>
                     </div>
-                    <div id="responsePart" name="responsePart">
-                        <div id="spacerAbovePopups"></div>
-                    </div>
-                    <button id="Login" class="clr-primary ui-btn-raised ui-btn">Login </button>
                 </div>
             </div>
         </div>
+        
         <!-- Info popup - single OK button -->
-        <div id="infoPopup-placeholder">
+        <div id="infoPopup-placeholder" class="d-none">
             <!-- placeholder for infoPopup -->
         </div>
         <!-- Confirm popup - OK, Cancel buttons -->
-        <div id="confirmPopup-placeholder">
+        <div id="confirmPopup-placeholder" class="d-none">
             <!-- placeholder for confirmPopup -->
         </div>
         <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="infoPopup-screen"></div>
@@ -127,7 +125,7 @@
             <div class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-role="popup" id="confirmPopup" data-overlay-theme="a"
                 data-theme="a" data-dismissible="false">
                 <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
-                    <h1 id="confirmPopupTitle" class="ui-title" role="heading" aria-level="1"></h1>
+                    <h1 id="confirmPopupTitle" class="ui-title primary-color" role="heading" aria-level="1"></h1>
                 </div>
                 <div role="main" class="ui-content">
                     <p id="confirmPopupMessage"></p>
