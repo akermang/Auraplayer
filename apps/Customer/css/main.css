@@ -62,6 +62,10 @@ span.paded-spn {
     padding: 1px;
 }
 
+.font-w-bolder{
+    font-weight: bolder;
+}
+
 button {
     text-shadow: none !important;
 }

@@ -48,7 +48,7 @@
                         <h3>☰</h3>
                     </a>
                     <div class="logo-link-wraper pad-size-1 col-xs-1">
-                        <a href="javascript:navigate(&#39;Login.html&#39;)" class="ui-link">
+                        <a class="ui-link" href="javascript:navigate(&#39;Login.html&#39;)">
                             <img id="logo-link-img" class="logo-link-img-sm" src="../../www/img/logo4.png">
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        
+        <!-- main content -->
         <div class="row align-items-center">
             <div data-role="main" class="container-fluid col-lg-4">
                 <div class="container-fluid">
@@ -87,56 +87,56 @@
                                         </div>
                                     </span>
                                 </form>
-                            </div>
                         </div>
-                        <div id="responsePart" name="responsePart">
-                            <div id="spacerAbovePopups"></div>
-                        </div>
-                        <button id="Login" class="clr-primary ui-btn-raised ui-btn border-r-size-1 pad-size-1">Login </button>
                     </div>
+                    <div id="responsePart" name="responsePart">
+                        <div id="spacerAbovePopups"></div>
+                    </div>
+                    <button id="Login" class="clr-primary ui-btn-raised ui-btn border-r-size-1 pad-size-1">Login </button>
                 </div>
             </div>
         </div>
-        
-        <!-- Info popup - single OK button -->
-        <div id="infoPopup-placeholder" class="d-none">
-            <!-- placeholder for infoPopup -->
-        </div>
-        <!-- Confirm popup - OK, Cancel buttons -->
-        <div id="confirmPopup-placeholder" class="d-none">
-            <!-- placeholder for confirmPopup -->
-        </div>
-        <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="infoPopup-screen"></div>
-        <div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="infoPopup-popup">
-            <div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all">
-                <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
-                    <h1 id="infoPopupTitle" class="ui-title" role="heading" aria-level="1"></h1>
-                </div>
-                <div role="main" class="ui-content">
-                    <p id="infoPopupMessage"></p>
-                    <span class="paded-spn"></span>
-                    <a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-a"
-                        data-rel="back">OK</a>
-                </div>
+    </div>
+
+    <!-- Info popup - single OK button -->
+    <div id="infoPopup-placeholder" class="d-none">
+        <!-- placeholder for infoPopup -->
+    </div>
+    <!-- Confirm popup - OK, Cancel buttons -->
+    <div id="confirmPopup-placeholder" class="d-none">
+        <!-- placeholder for confirmPopup -->
+    </div>
+    <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="infoPopup-screen"></div>
+    <div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="infoPopup-popup">
+        <div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all">
+            <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+                <h1 id="infoPopupTitle" class="ui-title" role="heading" aria-level="1"></h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p id="infoPopupMessage"></p>
+                <span class="paded-spn"></span>
+                <a href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-a"
+                    data-rel="back">OK</a>
             </div>
         </div>
-        <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="confirmPopup-screen"></div>
-        <div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="confirmPopup-popup">
-            <div class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-role="popup" id="confirmPopup" data-overlay-theme="a"
-                data-theme="a" data-dismissible="false">
-                <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
-                    <h1 id="confirmPopupTitle" class="ui-title primary-color" role="heading" aria-level="1"></h1>
-                </div>
-                <div role="main" class="ui-content">
-                    <p id="confirmPopupMessage"></p>
-                    <div class="pad-div-10"></div>
-                    <a id="confirmPopupOk" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a"
-                        data-rel="back" data-transition="flow">OK</a>
-                    <a id="confirmPopupCancel" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a"
-                        data-rel="back">Cancel</a>
-                </div>
+    </div>
+    <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="confirmPopup-screen"></div>
+    <div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="confirmPopup-popup">
+        <div class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-role="popup" id="confirmPopup" data-overlay-theme="a"
+            data-theme="a" data-dismissible="false">
+            <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+                <h1 id="confirmPopupTitle" class="ui-title primary-color" role="heading" aria-level="1"></h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p id="confirmPopupMessage"></p>
+                <div class="pad-div-10"></div>
+                <a id="confirmPopupOk" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a"
+                    data-rel="back" data-transition="flow">OK</a>
+                <a id="confirmPopupCancel" href="https://34.209.207.15:7002/ServiceManager/apps/Customer/Login.html#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a"
+                    data-rel="back">Cancel</a>
             </div>
         </div>
+    </div>
     </div>
     <div class="ui-loader ui-corner-all ui-body-z ui-loader-verbose">
         <span class="ui-icon-loading"></span>

@@ -42,19 +42,19 @@
 <body dir="LTR" id="mainBody">
     <div id="mainPage" data-role="page" data-theme="a">
         <!-- header -->
-        <div data-role="header" id="header" data-theme="a">
+        <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
             <div class="container-fluid">
                 <div class="row">
                     <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white">
                         <h3 class="text-white">☰</h3>
                     </a>
-                    <div class="col-xs-1" style="padding: 12px 8px">
+                    <div class="logo-link-wraper pad-size-1 col-xs-1">
                         <a href="javascript:navigate('Login.html')">
-                            <img src="../../www/img/logo4.png" width="120px">
+                            <img class="logo-link-img-sm" src="../../www/img/logo4.png">
                         </a>
                     </div>
-                    <div class="col-xs-9 text-white" >
-                        <h3 id="pageTitle" class="text-center" style="text-align: center">Customer List</h3>
+                    <div class="col-xs-9 pad-size-1" >
+                        <h3  class="text-center" id="pageTitle">Customer List</h3>
                     </div>
                 </div>
             </div>
@@ -68,26 +68,25 @@
                             <li class="d-none">
                                 <a href="#">
                                     <div id="listOutputHead" class="ui-grid-a">
-                                        <div id="S_CUSTOMER_NAME_0" display-format="%s" style="font-weight: bolder" class="ui-block-a">
+                                        <div id="S_CUSTOMER_NAME_0" display-format="%s" class="ui-block-a font-w-bolder">
                                             Name Required
                                         </div>
-                                        <div id="S_CUSTOMER_ID_0" display-format="%s" style="font-weight: bolder" class="ui-block-b">
+                                        <div id="S_CUSTOMER_ID_0" display-format="%s" class="ui-block-b font-w-bolder">
                                             CustomerId
                                         </div>
-                                        <div id="S_CUSTOMER_CREDIT_RATING_0" display-format="%s" style="font-weight: bolder" class="ui-block-c">
+                                        <div id="S_CUSTOMER_CREDIT_RATING_0" display-format="%s" class="ui-block-c font-w-bolder">
                                             Rating
                                         </div>
-                                        <div id="S_CUSTOMER_COUNTRY_0" display-format="%s" style="font-weight: bolder" class="ui-block-d">
+                                        <div id="S_CUSTOMER_COUNTRY_0" display-format="%s" class="ui-block-d font-w-bolder">
                                             Country
                                         </div>
-                                        <div id="S_CUSTOMER_STATE_0" display-format="%s" style="font-weight: bolder" class="ui-block-e">
+                                        <div id="S_CUSTOMER_STATE_0" display-format="%s" class="ui-block-e font-w-bolder">
                                             State
                                         </div>
                                     </div>
                                 </a>
                             </li>
                         </ul>
-                        <div id="spacerAbovePopups" style="height:30px"></div>
                     </div>
                 </div>
             </div>

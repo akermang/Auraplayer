@@ -1,288 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
- <head> 
-  <meta name="Modified" content="1523364293952"> 
-  <title>Customer Details</title> 
-  <!-- META --> 
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta http-equiv="Pragma" content="no-cache"> 
-  <meta http-equiv="Expires" content="0"> 
-  <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate"> 
-  <meta http-equiv="last-modified" content="1523364293952"> 
-  <meta name="Created-By" content="manager"> 
-  <meta name="Creation-Timestamp" content="1523364293952"> 
-  <!-- CSS imports --> 
-  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile-1.4.5.min.css"> 
-  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile.theme-1.4.5.min.css"> 
-  <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css"> 
-  <link rel="stylesheet" href="../../res/nativeDroid/css/nativedroid2.css"> 
-  <link rel="stylesheet" href="../../res/bootstrap/css/bootstrap.min.css"> 
-  <link rel="stylesheet" href="../../res/auraplayer/android.css"> 
-  <link rel="stylesheet" href="../../res/auraplayer/hamburger.css"> 
-  <link rel="stylesheet" href="css/main.css"> 
 
-  <!-- Javascript imports --> 
+<head>
+  <meta name="Modified" content="1523364293952">
+  <title>Customer Details</title>
+  <!-- META -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="cache-control" content="no-cache,no-store, must-revalidate">
+  <meta http-equiv="last-modified" content="1523364293952">
+  <meta name="Created-By" content="manager">
+  <meta name="Creation-Timestamp" content="1523364293952">
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile.theme-1.4.5.min.css">
+  <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css">
+  <link rel="stylesheet" href="../../res/nativeDroid/css/nativedroid2.css">
+  <link rel="stylesheet" href="../../res/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../res/auraplayer/android.css">
+  <link rel="stylesheet" href="../../res/auraplayer/hamburger.css">
+  <link rel="stylesheet" href="css/main.css">
 
-  <script type="text/javascript" src="../../res/jquery/jquery.min.js"></script> 
-  <script type="text/javascript" src="../../res/jquery/jquery-dateFormat.min.js"></script> 
-  <script type="text/javascript" src="../../res/jqueryMobile/jquery.mobile-1.4.5.min.js"></script> 
-  <script type="text/javascript" src="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.js"></script> 
-  <script type="text/javascript" src="../../res/nativeDroid/js/nativedroid2.js"></script> 
-  <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> --> 
-  <!-- AuraPlayer imports --> 
-  <script type="text/javascript" src="../../res/dist/auraplayer.js"></script> 
-  <script type="text/javascript" src="js/app.common.js"></script> 
-  <script type="text/javascript" src="json/handlerMap_1523364293952.json"></script> 
-  <script type="text/javascript" src="js/custom_js_1523364293952.js"></script> 
+  <!-- Javascript imports -->
 
- </head> 
- <body dir="LTR" id="mainBody"> 
-  <script type="text/javascript">
-	var showStatusMessages = false;
-	var origRequestFields;
-	
-	$(function () {
-	    origRequestFields = $('#requestFields').clone();
-	    setDefaultValues();
-	    initData();
-	
+  <script type="text/javascript" src="../../res/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../../res/jquery/jquery-dateFormat.min.js"></script>
+  <script type="text/javascript" src="../../res/jqueryMobile/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.js"></script>
+  <script type="text/javascript" src="../../res/nativeDroid/js/nativedroid2.js"></script>
+  <!-- <script type="text/javascript" src="../../res/bootstrap/js/bootstrap.min.js"></script> -->
+  <!-- AuraPlayer imports -->
+  <script type="text/javascript" src="../../res/dist/auraplayer.js"></script>
+  <script type="text/javascript" src="js/app.common.js"></script>
+  <script type="text/javascript" src="json/handlerMap_1523364293952.json"></script>
+  <script type="text/javascript" src="js/custom_js_1523364293952.js"></script>
 
-        prepareMobileLOV({
-            lovId: "S_CUSTOMER_ID_0_lov",
-            triggerId: "S_CUSTOMER_ID_0_lov_trigger",
-            elementId: "S_CUSTOMER_ID_0",
-            webService: "mcs_getAllCustomers",
-            requestPreparer: "prepare_S_CUSTOMER_ID_0_lov_request",
-            itemPresenter: "S_CUSTOMER_ID_0_lov_item_presenter",
-            itemHandler: "S_CUSTOMER_ID_0_lov_item_handler"
-        });
-        prepareMobileLOV({
-            lovId: "S_CUSTOMER_STATE_0_lov",
-            triggerId: "S_CUSTOMER_STATE_0_lov_trigger",
-            elementId: "S_CUSTOMER_STATE_0",
-            webService: "",
-            requestPreparer: "prepare_S_CUSTOMER_STATE_0_lov_request",
-            itemPresenter: "S_CUSTOMER_STATE_0_lov_item_presenter",
-            itemHandler: "S_CUSTOMER_STATE_0_lov_item_handler"
-        });
+</head>
 
-	    
-	    validateRequiredFields();
-	    
-	    $('input').on('input blur', function() {
-	    	setTimeout(validateRequiredFields, 200);
-		});
-	});
-	
-	var defaultValues = {};
-	defaultValues['S_CUSTOMER_ADDRESS_0'] = {
-        value: convert_S_CUSTOMER_ADDRESS_0('no'),
-        type: 'slider'
-    };
+<body dir="LTR" id="mainBody">
+  -->
+  <div id="mainPage" data-role="page" data-theme="a" class="">
+    <!-- header -->
+    <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+      <div class="container-fluid">
+        <div class="row">
+          <a id="titleRow-button" href="#leftpanel" class="ui-btn">
+            <h3>☰</h3>
+          </a>
+          <div class="logo-link-wraper pad-size-1 col-xs-1">
+            <a class="ui-link" href="javascript:navigate('Login.html')">
+              <img class="logo-link-img-sm" src="../../www/img/logo4.png">
+            </a>
+          </div>
+          <div class="col-xs-9 pad-size-1">
+            <h3 class="text-center" id="pageTitle">Customer Details</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- maim content -->
+    <div data-role="main" class="ui-content">
+      <div class="container-fluid">
+        <div class="row" style="padding: 12px 8px">
+          <div style="font-size: 20px; font-family: arial,serif;
+	                        color:#ffffff"></div>
+        </div>
+        <div>
+          <div id="requestPart" name="requestPart">
+            <button id="Orders" class="ui-btn clr-primary ui-btn-raised" style="padding: 12px 8px; margin: 12px 0px; color:#ffffff; display: inline-block; width: 98.0% !important">
+              Orders </button>
+            <div class="row" id="requestFields" style="padding: 12px 8px">
+              <form style="width: 98%">
+              </form>
+            </div>
+            <div class="row" id="responseField" style="padding: 12px 8px">
+              <form id="responseForm" style="width: 100%">
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ID_0_container">
+                  <label for="S_CUSTOMER_ID_0" style="color:#696969">
+                    <nobr>
+                      CustomerId
+                    </nobr>
+                  </label>
+                  <span style="display:inline-block; width:88%">
+                    <input id="S_CUSTOMER_ID_0" name="CustomerId" type="text" value="200"> </span>
+                  <a id="S_CUSTOMER_ID_0_lov_trigger" name="CustomerId_lov_trigger" data-rel="popup" data-transition="slideup" data-theme="a"
+                    class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-refresh ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0">
+                  </a>
+                </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_COMMENTS_0_container">
+                  <label for="S_CUSTOMER_COMMENTS_0" style="color:#696969">
+                    <nobr>
+                      Comments
+                    </nobr>
+                  </label>
+                  <input id="S_CUSTOMER_COMMENTS_0" name="Comments" type="text" value="" class="output_value"> </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_STATE_0_container">
+                  <label for="S_CUSTOMER_STATE_0" style="color:#696969">
+                    <nobr>
+                      State
+                    </nobr>
+                  </label>
+                  <span style="display:inline-block; width:100%">
+                    <div class="ui-mini ui-icon-carat-d ui-btn-icon-right dropdown-container">
+                      <div id="S_CUSTOMER_STATE_0">
+                        &nbsp;
+                      </div>
+                    </div>
+                  </span>
+                </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_PHONE_0_container">
+                  <label for="S_CUSTOMER_PHONE_0" style="color:#696969">
+                    <nobr>
+                      Phone
+                    </nobr>
+                  </label>
+                  <div class="read-only output_value" tag="input">
+                    <a id="S_CUSTOMER_PHONE_0" name="Phone" href="tel:"></a>
+                  </div>
+                </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ADDRESS_0_container">
+                  <label for="S_CUSTOMER_ADDRESS_0" style="color:#696969">
+                    <nobr>
+                      Slider
+                    </nobr>
+                  </label>
+                  <select id="S_CUSTOMER_ADDRESS_0" name="Slider" data-role="flipswitch" class="output_value">
+                    <option value="no">no</option>
+                    <option value="yes">yes</option>
+                  </select>
+                </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_CITY_0_container">
+                  <label for="S_CUSTOMER_CITY_0" style="color:#696969">
+                    <nobr>
+                      Checkbox yes/no
+                    </nobr>
+                  </label>
+                  <input id="S_CUSTOMER_CITY_0" name="Checkbox yes/no" type="checkbox" value="false" class="output_value" style="display: none"> </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ZIP_CODE_0_container">
+                  <label for="S_CUSTOMER_ZIP_CODE_0" style="color:#696969">
+                    <nobr>
+                      upload
+                    </nobr>
+                  </label>
+                  <div id="S_CUSTOMER_ZIP_CODE_0_filename" name="upload" class="read-only output_value" tag="input" style="display:inline-block">
+                    (No file)
+                  </div>
+                  <span style="display: none">
+                    <input type="file" id="S_CUSTOMER_ZIP_CODE_0" name="upload" data-target=""> </span>
+                  <a href="#" onclick="store('APCAMERA_TYPE', 'FILE'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_ZIP_CODE_0'); window.open('/ServiceManager/res/camera/camera.html');"
+                    class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a>
+                  <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext"
+                    style="width: 10% !important; float:right; margin-right: 0"></label>
+                </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_CREDIT_RATING_0_container">
+                  <label for="S_CUSTOMER_CREDIT_RATING_0" style="color:#696969">
+                    <nobr>
+                      Rating
+                    </nobr>
+                  </label>
+                  <input id="S_CUSTOMER_CREDIT_RATING_0" name="Rating" type="text" value="" class="output_value"> </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="Map_container">
+                  <label for="Map" style="color:#696969">
+                    <nobr>
+                      My Map
+                    </nobr>
+                  </label>
+                  <span style="display:inline-block; width:78%">
+                    <div id="map_address" class="read-only output_value" tag="input">
+                      &nbsp;
+                    </div>
+                    <!--<input id="map_address_input" type="text" value="" class="output_value">-->
+                  </span>
+                  <a id="map_navigate_button" title="Navigate To" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-navigation ui-btn-icon-notext"
+                    style="width: 10% !important; float:right; margin-right: 0"> </a>
+                  <a id="map_locate_button" title="Refresh &amp; Locate" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location ui-btn-icon-notext"
+                    style="width: 10% !important; float:right; margin-right: 0"> </a>
+                  <div id="map"></div>
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOrtud7nOOaSbrTdDpqY784fQN3IIRtG8&amp;callback=initMap&amp;language=en"></script> </span>
+                <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_NAME_0_container">
+                  <label for="S_CUSTOMER_NAME_0" style="color:#696969">
+                    <nobr>
+                      QR scanner
+                    </nobr>
+                  </label>
+                  <span style="display:inline-block; width:88%">
+                    <input id="S_CUSTOMER_NAME_0" name="QR scanner" type="text" value="" class="output_value"> </span>
+                  <a href="#" onclick="store('APCAMERA_TYPE', 'QR'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_NAME_0'); window.open('/ServiceManager/res/camera/camera.html');"
+                    class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a>
+                </span>
+              </form>
+            </div>
+          </div>
+          <div id="responsePart" name="responsePart">
+            <div id="spacerAbovePopups" style="height:30px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true">
+      <span id="hamburger-title">Menu</span>
+      <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
+      <ul data-role="listview" style="margin-top: 45px">
+        <li data-icon="ui-icon-blank">
+          <a href="Login.html" data-ajax="false">Login</a>
+        </li>
+        <li data-icon="ui-icon-blank">
+          <a href="CustomerList.html" data-ajax="false">Customer List</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Info popup - single OK button -->
+    <div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+      <div data-role="header" data-theme="a">
+        <h1 id="infoPopupTitle"></h1>
+      </div>
+      <div role="main" class="ui-content">
+        <p id="infoPopupMessage"></p>
+        <span style="padding: 1px;"></span>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-a" data-rel="back">OK</a>
+      </div>
+    </div>
+    <!-- Confirm popup - OK, Cancel buttons -->
+    <div data-role="popup" id="confirmPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+      <div data-role="header" data-theme="a">
+        <h1 id="confirmPopupTitle"></h1>
+      </div>
+      <div role="main" class="ui-content">
+        <p id="confirmPopupMessage"></p>
+        <div style="padding: 10px;"></div>
+        <a id="confirmPopupOk" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" data-transition="flow">OK</a>
+        <a id="confirmPopupCancel" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Cancel</a>
+      </div>
+    </div>
+  </div>
+</body>
 
-	defaultValues['Map'] = {
-        value: convert_map(),
-        type: 'map'
-    };
-
-	defaultValues['S_CUSTOMER_PHONE_0'] = {
-        value: null,
-        type: 'phone'
-    };
-
-	
-	defaultValues['S_CUSTOMER_ZIP_CODE_0'] = {
-        value: null,
-        type: 'file'
-    };
-
-	defaultValues['S_CUSTOMER_CREDIT_RATING_0'] = {
-        value: null,
-        type: 'text'
-    };
-
-	defaultValues['S_CUSTOMER_COMMENTS_0'] = {
-        value: null,
-        type: 'text'
-    };
-
-	defaultValues['S_CUSTOMER_NAME_0'] = {
-        value: convert_S_CUSTOMER_NAME_0(null),
-        type: 'qr'
-    };
-
-	defaultValues['S_CUSTOMER_CITY_0'] = {
-        value: convert_S_CUSTOMER_CITY_0('false'),
-        type: 'checkbox'
-    };
-
-	defaultValues['S_CUSTOMER_ID_0'] = {
-        value: '200',
-        type: 'lov'
-    };
-
-	
-	
-	function showInputScreen() {
-	    setDefaultValues();
-	    refreshInputElements();
-	
-	    $("#requestPart").show();
-	    $("#responsePart").hide();
-	
-	    clearOutputFields();
-	}
-	
-	//handler for request sent
-	function sendRequestHandler() {
-	    document.getElementById("responsePart").style.display = 'none';
-	    spinner().start("Executing..", "a");
-	}
-	
-	//handler for response received
-	function receiveResponseHandler(response, serviceName, status, populateFields) {
-	    spinner().stop();
-	
-	    if (typeof(populateFields) === 'undefined' || populateFields) {
-	        //show output params
-	
-	        document.getElementById("responsePart").style.display = '';
-	        validateRequiredFields();
-	    }
-	}
-	
-    //init function
-    $(function () {
-        removeDuplicatedFields();
-    });
-</script> 
-  <div id="mainPage" data-role="page" data-theme="a" class=""> 
-   <div data-role="header" id="header" data-theme="a"> 
-    <div class="container-fluid"> 
-     <div class="row"> 
-      <a id="titleRow-button" href="#leftpanel" class="ui-btn" style="color:#ffffff; "><h3>☰</h3></a> 
-      <div class="col-xs-1" style="padding: 12px 8px"> 
-       <a href="javascript:navigate('Login.html')"><img src="../../www/img/logo4.png" width="120px"></a> 
-      </div> 
-      <div class="col-xs-9" style="padding: 12px 8px; color:#ffffff"> 
-       <h3 id="pageTitle" style="text-align: center">Customer Details</h3> 
-      </div> 
-     </div> 
-    </div> 
-   </div> 
-   <div data-role="main" class="ui-content"> 
-    <div class="container-fluid"> 
-     <div class="row" style="padding: 12px 8px"> 
-      <div style="font-size: 20px; font-family: arial,serif;
-	                        color:#ffffff"></div> 
-     </div> 
-     <div> 
-      <div id="requestPart" name="requestPart"> 
-       <button id="Orders" class="ui-btn clr-primary ui-btn-raised" style="padding: 12px 8px; margin: 12px 0px; color:#ffffff; display: inline-block; width: 98.0% !important"> Orders </button> 
-       <div class="row" id="requestFields" style="padding: 12px 8px"> 
-        <form style="width: 98%"> 
-        </form> 
-       </div> 
-       <div class="row" id="responseField" style="padding: 12px 8px"> 
-        <form id="responseForm" style="width: 100%"> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ID_0_container"> <label for="S_CUSTOMER_ID_0" style="color:#696969"> 
-           <nobr>
-             CustomerId 
-           </nobr> </label> <span style="display:inline-block; width:88%"> <input id="S_CUSTOMER_ID_0" name="CustomerId" type="text" value="200"> </span> <a id="S_CUSTOMER_ID_0_lov_trigger" name="CustomerId_lov_trigger" data-rel="popup" data-transition="slideup" data-theme="a" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-refresh ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"> </a> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_COMMENTS_0_container"> <label for="S_CUSTOMER_COMMENTS_0" style="color:#696969"> 
-           <nobr>
-             Comments 
-           </nobr> </label> <input id="S_CUSTOMER_COMMENTS_0" name="Comments" type="text" value="" class="output_value"> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_STATE_0_container"> <label for="S_CUSTOMER_STATE_0" style="color:#696969"> 
-           <nobr>
-             State 
-           </nobr> </label> <span style="display:inline-block; width:100%"> 
-           <div class="ui-mini ui-icon-carat-d ui-btn-icon-right dropdown-container"> 
-            <div id="S_CUSTOMER_STATE_0">
-              &nbsp; 
-            </div> 
-           </div> </span> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_PHONE_0_container"> <label for="S_CUSTOMER_PHONE_0" style="color:#696969"> 
-           <nobr>
-             Phone 
-           </nobr> </label> 
-          <div class="read-only output_value" tag="input"> 
-           <a id="S_CUSTOMER_PHONE_0" name="Phone" href="tel:"></a> 
-          </div> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ADDRESS_0_container"> <label for="S_CUSTOMER_ADDRESS_0" style="color:#696969"> 
-           <nobr>
-             Slider 
-           </nobr> </label> <select id="S_CUSTOMER_ADDRESS_0" name="Slider" data-role="flipswitch" class="output_value"> <option value="no">no</option> <option value="yes">yes</option> </select> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_CITY_0_container"> <label for="S_CUSTOMER_CITY_0" style="color:#696969"> 
-           <nobr>
-             Checkbox yes/no 
-           </nobr> </label> <input id="S_CUSTOMER_CITY_0" name="Checkbox yes/no" type="checkbox" value="false" class="output_value" style="display: none"> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ZIP_CODE_0_container"> <label for="S_CUSTOMER_ZIP_CODE_0" style="color:#696969"> 
-           <nobr>
-             upload 
-           </nobr> </label> 
-          <div id="S_CUSTOMER_ZIP_CODE_0_filename" name="upload" class="read-only output_value" tag="input" style="display:inline-block">
-            (No file) 
-          </div> <span style="display: none"> <input type="file" id="S_CUSTOMER_ZIP_CODE_0" name="upload" data-target=""> </span> <a href="#" onclick="store('APCAMERA_TYPE', 'FILE'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_ZIP_CODE_0'); window.open('/ServiceManager/res/camera/camera.html');" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a> <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></label> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_CREDIT_RATING_0_container"> <label for="S_CUSTOMER_CREDIT_RATING_0" style="color:#696969"> 
-           <nobr>
-             Rating 
-           </nobr> </label> <input id="S_CUSTOMER_CREDIT_RATING_0" name="Rating" type="text" value="" class="output_value"> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="Map_container"> <label for="Map" style="color:#696969"> 
-           <nobr>
-             My Map 
-           </nobr> </label> <span style="display:inline-block; width:78%"> 
-           <div id="map_address" class="read-only output_value" tag="input">
-             &nbsp; 
-           </div> 
-           <!--<input id="map_address_input" type="text" value="" class="output_value">--> </span> <a id="map_navigate_button" title="Navigate To" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-navigation ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"> </a> <a id="map_locate_button" title="Refresh &amp; Locate" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"> </a> 
-          <div id="map"></div> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOrtud7nOOaSbrTdDpqY784fQN3IIRtG8&amp;callback=initMap&amp;language=en"></script> </span> 
-         <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_NAME_0_container"> <label for="S_CUSTOMER_NAME_0" style="color:#696969"> 
-           <nobr>
-             QR scanner 
-           </nobr> </label> <span style="display:inline-block; width:88%"> <input id="S_CUSTOMER_NAME_0" name="QR scanner" type="text" value="" class="output_value"> </span> <a href="#" onclick="store('APCAMERA_TYPE', 'QR'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_NAME_0'); window.open('/ServiceManager/res/camera/camera.html');" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a> </span> 
-        </form> 
-       </div> 
-      </div> 
-      <div id="responsePart" name="responsePart"> 
-       <div id="spacerAbovePopups" style="height:30px"></div> 
-      </div> 
-     </div> 
-    </div> 
-   </div> 
-   <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true"> 
-    <span id="hamburger-title">Menu</span> 
-    <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a> 
-    <ul data-role="listview" style="margin-top: 45px"> 
-     <li data-icon="ui-icon-blank"><a href="Login.html" data-ajax="false">Login</a></li> 
-     <li data-icon="ui-icon-blank"><a href="CustomerList.html" data-ajax="false">Customer List</a></li> 
-    </ul> 
-   </div> 
-   <!-- Info popup - single OK button --> 
-   <div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;"> 
-    <div data-role="header" data-theme="a"> 
-     <h1 id="infoPopupTitle"></h1> 
-    </div> 
-    <div role="main" class="ui-content"> 
-     <p id="infoPopupMessage"></p> 
-     <span style="padding: 1px;"></span> 
-     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-a" data-rel="back">OK</a> 
-    </div> 
-   </div> 
-   <!-- Confirm popup - OK, Cancel buttons --> 
-   <div data-role="popup" id="confirmPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;"> 
-    <div data-role="header" data-theme="a"> 
-     <h1 id="confirmPopupTitle"></h1> 
-    </div> 
-    <div role="main" class="ui-content"> 
-     <p id="confirmPopupMessage"></p> 
-     <div style="padding: 10px;"></div> 
-     <a id="confirmPopupOk" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" data-transition="flow">OK</a> 
-     <a id="confirmPopupCancel" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Cancel</a> 
-    </div> 
-   </div> 
-  </div>  
- </body>
 </html>

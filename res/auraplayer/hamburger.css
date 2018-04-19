@@ -9,10 +9,11 @@
 	border-style: none;
 	text-shadow: none;
 	padding-top: 15px;
+	color: #f7f7f7;
+
 }
 
 #hamburger-title {
-	font-color: #f7f7f7;
 	font-size: 30px;
 	font-weight: 550;
 	padding-top: 15px;
