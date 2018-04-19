@@ -65,6 +65,10 @@ span.paded-spn {
 .font-w-bolder{
     font-weight: bolder;
 }
+table#tableOutput{
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 button {
     text-shadow: none !important;
