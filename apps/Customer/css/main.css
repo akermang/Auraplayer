@@ -47,7 +47,11 @@ span.spn-login-form label {
 }
 
 .ui-popup-container{
-    width: 280px;
+    min-width: 280px;
+}
+
+.margin-size-1{
+    margin-top: 1em;
 }
 
 .ui-header.ui-bar-a{
@@ -68,6 +72,10 @@ span.paded-spn {
 table#tableOutput{
     max-width: 800px;
     margin: 0 auto;
+}
+.bordered-solid{
+    border: 2px solid  #329999;
+    border-radius: 7px;
 }
 
 button {
