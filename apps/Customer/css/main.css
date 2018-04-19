@@ -58,6 +58,10 @@ span.spn-login-form label {
     margin-top: 1em;
 }
 
+.margin-top-3{
+    margin-top: 3em;
+}
+
 .ui-header.ui-bar-a{
     background-color: #329999;
 }  
