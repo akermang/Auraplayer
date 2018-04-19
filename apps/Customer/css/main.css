@@ -1,7 +1,11 @@
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     #pageTitle {
         margin-left: 120px;
         text-align: left !important;
+    }
+
+    .table-responsive{
+        display: block!important; 
     }
 }
 
@@ -70,8 +74,12 @@ span.paded-spn {
     font-weight: bolder;
 }
 table#tableOutput{
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.table-responsive{
+    display: table;
 }
 .bordered-solid{
     border-bottom: 2px solid  #329999;
