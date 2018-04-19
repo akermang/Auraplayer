@@ -66,18 +66,9 @@
     <!-- maim content -->
     <div data-role="main" class="ui-content">
       <div class="container-fluid">
-        <div class="row" style="padding: 12px 8px">
-          <div style="font-size: 20px; font-family: arial,serif;
-	                        color:#ffffff"></div>
-        </div>
         <div>
           <div id="requestPart" name="requestPart">
-            <button id="Orders" class="ui-btn clr-primary ui-btn-raised border-r-size-1">
-              Orders </button>
-            <div class="row" id="requestFields" style="padding: 12px 8px">
-              <form style="width: 98%">
-              </form>
-            </div>
+            <button id="Orders" class="ui-btn clr-primary ui-btn-raised border-r-size-1">Orders </button>
             <div class="row" id="responseField" style="padding: 12px 8px">
               <form id="responseForm" style="width: 100%">
                 <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_ID_0_container">
@@ -174,7 +165,7 @@
                     <div id="map_address" class="read-only output_value" tag="input">
                       &nbsp;
                     </div>
-                    <!--<input id="map_address_input" type="text" value="" class="output_value">-->
+                    <input id="map_address_input" type="text" value="" class="output_value">
                   </span>
                   <a id="map_navigate_button" title="Navigate To" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-navigation ui-btn-icon-notext"
                     style="width: 10% !important; float:right; margin-right: 0"> </a>
@@ -197,7 +188,7 @@
             </div>
           </div>
           <div id="responsePart" name="responsePart">
-            <div id="spacerAbovePopups" style="height:30px"></div>
+            <div id="spacerAbovePopups" ></div>
           </div>
         </div>
       </div>
@@ -232,7 +223,7 @@
       </div>
       <div role="main" class="ui-content">
         <p id="confirmPopupMessage"></p>
-        <div style="padding: 10px;"></div>
+        <div class="pad-div-10"></div>
         <a id="confirmPopupOk" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back" data-transition="flow">OK</a>
         <a id="confirmPopupCancel" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Cancel</a>
       </div>
