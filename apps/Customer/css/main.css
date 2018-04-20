@@ -6,6 +6,10 @@
     .table-responsive {
         display: block !important;
     }
+
+    ul.width-xs-51 li div[class*=ui-block]  {
+        width: 100%!important;
+    }
 }
 
 .body {
@@ -54,17 +58,35 @@ span.spn-login-form label {
 }
 
 /* global sizing class   **************** */
+.text-control-ul  li div[class*=ui-block] {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ui-header-fixed {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.text-control {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 .margin-top-1 {
     margin-top: 1em !important;
 }
 
-.margin-top-3 {
-    margin-top: 3em;
+
+.margin-top-6 {
+    margin-top: 6em!important;
 }
 
 .margin-top-45 {
-    margin-top: 45px!important;
+    margin-top: 45px !important;
 }
 
 .margin-bottom-1 {
@@ -108,7 +130,7 @@ span.paded-spn {
 }
 
 .d-none {
-    display: none!important;
+    display: none !important;
 }
 
 /* a[class *= ui-icon],

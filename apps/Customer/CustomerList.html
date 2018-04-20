@@ -42,7 +42,7 @@
 <body dir="LTR" id="mainBody">
     <div id="mainPage" data-role="page" data-theme="a">
         <!-- header -->
-        <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+        <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed">
             <div class="container-fluid">
                 <div class="row">
                     <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white">
@@ -60,27 +60,27 @@
             </div>
         </div>
         <!-- main content -->
-        <div data-role="main" class="ui-content">
+        <div data-role="main" class="ui-content margin-top-6">
             <div class="container-fluid">
-                <div>
+                <div class="col-lg-10 col-sm-offset-1 col-xs-offset-0">
                     <div id="responsePart" name="responsePart">
-                        <ul id="listOutput" data-role="listview" data-filter="true">
+                        <ul class="width-xs-51 text-control-ul margin-top-3" id="listOutput" data-role="listview" data-filter="true">
                             <li class="d-none">
                                 <a href="#">
                                     <div id="listOutputHead" class="ui-grid-a">
-                                        <div id="S_CUSTOMER_NAME_0" display-format="%s" class="ui-block-a font-w-bolder">
+                                        <div id="S_CUSTOMER_NAME_0" display-format="%s" class="ui-block-a font-w-bolder width-xs-51">
                                             Name Required
                                         </div>
-                                        <div id="S_CUSTOMER_ID_0" display-format="%s" class="ui-block-b font-w-bolder">
+                                        <div id="S_CUSTOMER_ID_0" display-format="%s" class="ui-block-b font-w-bolder width-xs-51">
                                             CustomerId
                                         </div>
-                                        <div id="S_CUSTOMER_CREDIT_RATING_0" display-format="%s" class="ui-block-c font-w-bolder">
+                                        <div id="S_CUSTOMER_CREDIT_RATING_0" display-format="%s" class="ui-block-c font-w-bolder width-xs-51">
                                             Rating
                                         </div>
-                                        <div id="S_CUSTOMER_COUNTRY_0" display-format="%s" class="ui-block-d font-w-bolder">
+                                        <div id="S_CUSTOMER_COUNTRY_0" display-format="%s" class="ui-block-d font-w-bolder width-xs-51">
                                             Country
                                         </div>
-                                        <div id="S_CUSTOMER_STATE_0" display-format="%s" class="ui-block-e font-w-bolder">
+                                        <div id="S_CUSTOMER_STATE_0" display-format="%s" class="ui-block-e font-w-bolder width-xs-51">
                                             State
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
         <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true">
             <span id="hamburger-title">Menu</span>
             <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
-            <ul data-role="listview" style="margin-top: 45px">
+            <ul class="margin-top-45" data-role="listview">
                 <li data-icon="ui-icon-blank">
                     <a href="Login.html" data-ajax="false">Login</a>
                 </li>
