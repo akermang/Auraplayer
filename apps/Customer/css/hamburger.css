@@ -13,7 +13,8 @@
 }
 
 .action-a .action-img {
-	width: 16px;
+	width: 20px;
+	vertical-align: initial;
 }
 
 #hamburger-title {
