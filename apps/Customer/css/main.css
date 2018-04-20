@@ -12,6 +12,13 @@
     }
 }
 
+@media (max-width: 500px ) {
+    #pageTitle {
+        margin-left: 120px;
+        text-align: center!important;
+    }
+}
+
 .body {
     background-color: #ffffff !important;
 }
