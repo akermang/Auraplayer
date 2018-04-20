@@ -12,6 +12,10 @@
 	color: #f7f7f7!important;
 }
 
+.action-a .action-img {
+	width: 16px;
+}
+
 #hamburger-title {
 	font-size: 30px;
 	font-weight: 550;
