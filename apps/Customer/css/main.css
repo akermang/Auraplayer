@@ -6,20 +6,18 @@
     .table-responsive {
         display: block !important;
     }
-
-    ul.width-xs-51 li div[class*=ui-block]  {
-        width: 100%!important;
+    ul.width-xs-51 li div[class*=ui-block] {
+        width: 100% !important;
     }
 }
 
-@media (max-width: 500px ) {
+@media (max-width: 500px) {
     #pageTitle {
         margin-left: 100px;
-        text-align: center!important;
+        text-align: center !important;
     }
-
     .ui-content-pad {
-        padding: 1em 0.3em!important;
+        padding: 1em 0.3em !important;
     }
 }
 
@@ -69,7 +67,8 @@ span.spn-login-form label {
 }
 
 /* global sizing class   **************** */
-.text-control-ul  li div[class*=ui-block] {
+
+.text-control-ul li div[class*=ui-block] {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -91,9 +90,8 @@ span.spn-login-form label {
     margin-top: 1em !important;
 }
 
-
 .margin-top-6 {
-    margin-top: 6em!important;
+    margin-top: 6em !important;
 }
 
 .margin-top-45 {
