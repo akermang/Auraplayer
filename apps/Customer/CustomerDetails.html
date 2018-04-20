@@ -63,7 +63,7 @@
       </div>
     </div>
     <!-- maim content -->
-    <div data-role="main" class="ui-content">
+    <div data-role="main" class="ui-content ui-content-pad">
       <div class="container-fluid">
         <div>
           <!-- <div class=""> -->
@@ -149,9 +149,10 @@
                 </div>
                 <span class="d-none">
                   <input type="file" id="S_CUSTOMER_ZIP_CODE_0" name="upload" data-target=""> </span>
-                <a href="#" onclick="store('APCAMERA_TYPE', 'FILE'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_ZIP_CODE_0'); window.open('/ServiceManager/res/camera/camera.html');"
-                  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext width-10 float-r"></a>
-                <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext width-10 float-r"></label>
+                <a href="#" onclick="store('APCAMERA_TYPE', 'FILE'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_ZIP_CODE_0');
+                 window.open('/ServiceManager/res/camera/camera.html');" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext width-10 float-r"></a>
+                <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext width-10 float-r">
+                </label>
               </span>
             </div>
             <div class="col-lg-12 bordered-solid pad-size-1 margin-top-1">
@@ -221,6 +222,12 @@
         </li>
         <li data-icon="ui-icon-blank">
           <a href="CustomerList.html" data-ajax="false">Customer List</a>
+        </li>
+        <li data-icon="ui-icon-blank">
+          <a href="CustoemrDetails.html" data-ajax="false">Custoemr Details</a>
+        </li>
+        <li data-icon="ui-icon-blank">
+          <a href="Orders.html" data-ajax="false">Orders</a>
         </li>
       </ul>
     </div>

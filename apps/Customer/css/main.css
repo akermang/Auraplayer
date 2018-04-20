@@ -14,7 +14,7 @@
 
 @media (max-width: 500px ) {
     #pageTitle {
-        margin-left: 120px;
+        margin-left: 100px;
         text-align: center!important;
     }
 }
@@ -75,6 +75,9 @@ span.spn-login-form label {
     position: fixed;
     z-index: 10;
     width: 100%;
+}
+.ui-content-pad {
+    padding: 1em 0.3em!important;
 }
 
 .text-control {

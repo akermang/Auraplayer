@@ -45,37 +45,33 @@
         <div data-role="header" id="header" data-theme="a">
             <div class="container-fluid">
                 <div class="row">
-                    <a id="titleRow-button" href="#leftpanel" class="ui-btn" style="color:#ffffff; ">
+                    <a id="titleRow-button" href="#leftpanel" class="ui-btn">
                         <h3>☰</h3>
                     </a>
-                    <div class="col-xs-1" style="padding: 12px 8px">
+                    <div class="col-xs-1 pad-size-1">
                         <a href="javascript:navigate('Login.html')">
-                            <img src="../../www/img/logo4.png" width="120px">
+                            <img class="logo-link-img-sm" src="../../www/img/logo4.png">
                         </a>
                     </div>
-                    <div class="col-xs-9" style="padding: 12px 8px; color:#ffffff">
-                        <h3 id="pageTitle" style="text-align: center">Orders</h3>
+                    <div class="col-xs-9 pad-size-1 text-center">
+                        <h3 id="pageTitle">Orders</h3>
                     </div>
                 </div>
             </div>
         </div>
         <div data-role="main" class="ui-content">
             <div class="container-fluid">
-                <div class="row" style="padding: 12px 8px">
-                    <div style="font-size: 20px; font-family: arial,serif;
-	                        color:#ffffff"></div>
-                </div>
                 <div>
-                    <div id="requestPart" name="requestPart">
-                        <div class="row" id="requestFields" style="padding: 12px 8px">
-                            <form style="width: 98%">
+                    <!-- <div id="requestPart" name="requestPart">
+                        <div class="row pad-size-1" id="requestFields">
+                            <form class=-"width-98">
                             </form>
                         </div>
-                        <div class="row" id="responseField" style="padding: 12px 8px">
-                            <form id="responseForm" style="width: 100%">
+                        <div class="row pad-size-1" id="responseField">
+                            <form class="width-98" id="responseForm">
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                     <div id="responsePart" name="responsePart">
                         <table id="tableOutput" class="table table-bordered table-striped table-hover table-responsive">
                             <thead id="tableOutputHead">
@@ -95,7 +91,7 @@
                         </table>
                         <div id="spacerAbovePopups" style="height:30px"></div>
                     </div>
-                    <button id="Back" class="ui-btn clr-primary ui-btn-raised" style="padding: 12px 8px; margin: 0 auto; color:#ffffff; display: block; width: 98.0% !important; max-width: 700px; border-radius: 7px;">
+                    <button id="Back" class="ui-btn clr-primary ui-btn-raised pad-size-1 border-r-size-1">
                         Back </button>
                 </div>
             </div>
@@ -109,6 +105,12 @@
                 </li>
                 <li data-icon="ui-icon-blank">
                     <a href="CustomerList.html" data-ajax="false">Customer List</a>
+                </li>
+                <li data-icon="ui-icon-blank">
+                    <a href="CustomerDetails.html" data-ajax="false">Customer Details</a>
+                </li>
+                <li data-icon="ui-icon-blank">
+                    <a href="Orders.html" data-ajax="false">Orders</a>
                 </li>
             </ul>
         </div>
