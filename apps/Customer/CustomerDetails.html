@@ -147,24 +147,23 @@
                 <div id="S_CUSTOMER_ZIP_CODE_0_filename" name="upload" class="read-only output_value d-inline-block" tag="input">
                   (No file)
                 </div>
-                <span style="display: none">
+                <span class="d-none">
                   <input type="file" id="S_CUSTOMER_ZIP_CODE_0" name="upload" data-target=""> </span>
                 <a href="#" onclick="store('APCAMERA_TYPE', 'FILE'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_ZIP_CODE_0'); window.open('/ServiceManager/res/camera/camera.html');"
-                  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a>
-                <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext"
-                  style="width: 10% !important; float:right; margin-right: 0"></label>
+                  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext width-10 float-r"></a>
+                <label for="S_CUSTOMER_ZIP_CODE_0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bullets ui-btn-icon-notext width-10 float-r"></label>
               </span>
             </div>
             <div class="col-lg-12 bordered-solid pad-size-1 margin-top-1">
-              <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_CREDIT_RATING_0_container">
-                <label for="S_CUSTOMER_CREDIT_RATING_0" style="color:#696969">
+              <span class="responseField d-inline-block width-98" id="S_CUSTOMER_CREDIT_RATING_0_container">
+                <label for="S_CUSTOMER_CREDIT_RATING_0">
                   <nobr>
                     Rating
                   </nobr>
                 </label>
                 <input id="S_CUSTOMER_CREDIT_RATING_0" name="Rating" type="text" value="" class="output_value"> </span>
-              <span class="responseField" style="display: inline-block; width: 98.0%" id="S_CUSTOMER_COMMENTS_0_container">
-                <label for="S_CUSTOMER_COMMENTS_0" style="color:#696969">
+              <span class="responseField d-inline-block width-98" id="S_CUSTOMER_COMMENTS_0_container">
+                <label for="S_CUSTOMER_COMMENTS_0">
                   <nobr>
                     Comments
                   </nobr>
@@ -173,22 +172,22 @@
             </div>
             <!-- Nap -->
             <div class="col-lg-12 bordered-solid pad-size-1 margin-top-1">
-              <span class="responseField" style="display: inline-block; width: 98.0%" id="Map_container">
-                <label for="Map" style="color:#696969">
+              <span class="responseField d-inline-block width-98" id="Map_container">
+                <label for="Map">
                   <nobr>
                     My Map
                   </nobr>
                 </label>
-                <span style="display:inline-block; width:78%">
+                <span class="d-inline-block width-78">
                   <div id="map_address" class="read-only output_value" tag="input">
                     &nbsp;
                   </div>
                   <input id="map_address_input" type="text" value="" class="output_value">
                 </span>
-                <a id="map_navigate_button" title="Navigate To" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-navigation ui-btn-icon-notext"
-                  style="width: 10% !important; float:right; margin-right: 0"> </a>
-                <a id="map_locate_button" title="Refresh &amp; Locate" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location ui-btn-icon-notext"
-                  style="width: 10% !important; float:right; margin-right: 0"> </a>
+                <a id="map_navigate_button" title="Navigate To" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-navigation ui-btn-icon-notext width-10 float-r">
+                </a>
+                <a id="map_locate_button" title="Refresh &amp; Locate" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location ui-btn-icon-notext width-10 float-r">
+                </a>
                 <div id="map"></div>
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOrtud7nOOaSbrTdDpqY784fQN3IIRtG8&amp;callback=initMap&amp;language=en"></script>
               </span>
@@ -200,10 +199,10 @@
                     QR scanner
                   </nobr>
                 </label>
-                <span style="display:inline-block; width:88%">
+                <span class="d-inline-block width-88">
                   <input id="S_CUSTOMER_NAME_0" name="QR scanner" type="text" value="" class="output_value"> </span>
                 <a href="#" onclick="store('APCAMERA_TYPE', 'QR'); store('APCAMERA_RETURN_ELEMENT', 'S_CUSTOMER_NAME_0'); window.open('/ServiceManager/res/camera/camera.html');"
-                  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext" style="width: 10% !important; float:right; margin-right: 0"></a>
+                  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-camera ui-btn-icon-notext width-10 float-r"></a>
               </span>
             </div>
           </div>
@@ -216,7 +215,7 @@
     <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true">
       <span id="hamburger-title">Menu</span>
       <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
-      <ul data-role="listview" style="margin-top: 45px">
+      <ul data-role="listview" class="margin-top-45">
         <li data-icon="ui-icon-blank">
           <a href="Login.html" data-ajax="false">Login</a>
         </li>
@@ -226,18 +225,18 @@
       </ul>
     </div>
     <!-- Info popup - single OK button -->
-    <div data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+    <div class="max-w-400" data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false">
       <div data-role="header" data-theme="a">
         <h1 id="infoPopupTitle"></h1>
       </div>
       <div role="main" class="ui-content">
         <p id="infoPopupMessage"></p>
-        <span style="padding: 1px;"></span>
+        <span class="paded-spn"></span>
         <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-a" data-rel="back">OK</a>
       </div>
     </div>
     <!-- Confirm popup - OK, Cancel buttons -->
-    <div data-role="popup" id="confirmPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;">
+    <div class="max-w-400" data-role="popup" id="confirmPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false">
       <div data-role="header" data-theme="a">
         <h1 id="confirmPopupTitle"></h1>
       </div>

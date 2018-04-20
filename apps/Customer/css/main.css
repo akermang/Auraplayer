@@ -63,6 +63,10 @@ span.spn-login-form label {
     margin-top: 3em;
 }
 
+.margin-top-45 {
+    margin-top: 45px!important;
+}
+
 .margin-bottom-1 {
     margin-bottom: 1em !important;
 }
@@ -75,8 +79,20 @@ span.spn-login-form label {
     width: 10% !important;
 }
 
+.width-78 {
+    width: 78% !important;
+}
+
 .width-88 {
     width: 88% !important;
+}
+
+.width-98 {
+    width: 98% !important;
+}
+
+.max-w-400 {
+    max-width: 400px;
 }
 
 div.pad-div-10 {
@@ -89,6 +105,10 @@ span.paded-spn {
 
 .font-w-bolder {
     font-weight: bolder;
+}
+
+.d-none {
+    display: none!important;
 }
 
 /* a[class *= ui-icon],
