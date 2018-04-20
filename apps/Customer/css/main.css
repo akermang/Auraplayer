@@ -53,14 +53,31 @@ span.spn-login-form label {
 .ui-popup-container{
     min-width: 280px;
 }
-
-.margin-size-1{
-    margin-top: 1em;
+/* global sizing class   **************** */
+.margin-top-1{
+    margin-top: 1em!important;
 }
 
 .margin-top-3{
     margin-top: 3em;
 }
+
+.margin-bottom-1{
+    margin-bottom: 1em!important;
+}
+
+.float-r{
+    float:right;
+}
+
+.width-10{
+    width: 10%!important;
+}
+
+.width-88{
+    width: 88%!important;
+}
+/* **************************** */
 
 .ui-header.ui-bar-a{
     background-color: #329999;
