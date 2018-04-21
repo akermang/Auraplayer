@@ -122,6 +122,10 @@ span.spn-login-form label {
     width: 98% !important;
 }
 
+.width-100 {
+    width: 100% !important;
+}
+
 .max-w-400 {
     max-width: 400px;
 }
