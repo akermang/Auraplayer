@@ -4,6 +4,11 @@
 	filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
+#leftpanel ul li {
+	background: aqua;
+	
+}
+
 #titleRow-button {
 	background-color: transparent;
 	border-style: none;

@@ -46,6 +46,11 @@
         <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed">
             <div class="container-fluid">
                 <div class="row">
+                    <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
+                        <h3 class="text-white">
+                            <img class="action-img" src="./assets/img/ActionIcon.png" alt="">
+                        </h3>
+                    </a>
                     <div class="logo-link-wraper pad-size-1 col-xs-1">
                         <a href="javascript:navigate('Login.html')">
                             <img class="logo-link-img-sm" src="../../www/img/logo4.png">
@@ -54,13 +59,7 @@
                     <div class="col-xs-9 pad-size-1">
                         <h3 class="text-center" id="pageTitle">Customer List</h3>
                     </div>
-                    <div class="action-hamburger">
-                        <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
-                            <h3 class="text-white">
-                                <img class="action-img" src="./assets/img/ActionIcon.png" alt="">
-                            </h3>
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -69,8 +68,8 @@
             <div class="container-fluid">
                 <div class="col-lg-10 col-sm-offset-1 col-xs-offset-0">
                     <div id="responsePart" name="responsePart">
-                        <ul class="width-xs-51 text-control-ul margin-top-3" id="listOutput" data-role="listview" data-filter="true">
-                            <li class="d-none">
+                        <ul class="width-xs-51 text-control-ul margin-top-3 bordered-full" id="listOutput" data-role="listview" data-filter="true">
+                            <li class="d-none border-r-size-1">
                                 <a href="#">
                                     <div id="listOutputHead" class="ui-grid-a">
                                         <div id="S_CUSTOMER_NAME_0" display-format="%s" class="ui-block-a font-w-bolder width-xs-51">
@@ -97,20 +96,21 @@
             </div>
         </div>
         <!-- navigation panel -->
-        <div id="leftpanel" data-role="panel" data-display="overlay" data-position="right" data-position-fixed="true">
+        <div id="leftpanel" data-role="panel" data-display="overlay" data-position="left" data-position-fixed="true">
             <span id="hamburger-title">Menu</span>
-            <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-r ui-btn-icon-left" data-rel="close"></a>
+            <img class="logo-link-img-sm pad-size-1" src="../../www/img/logo4.png">
+            <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
             <ul data-role="listview" style="margin-top: 45px">
-                <li data-icon="ui-icon-blank">
+                <li data-icon="">
                     <a href="Login.html" data-ajax="false">Login</a>
                 </li>
-                <li data-icon="ui-icon-blank">
+                <li data-icon="">
                     <a href="CustomerList.html" data-ajax="false">Customer List</a>
                 </li>
-                <li data-icon="ui-icon-blank">
+                <li data-icon="">
                     <a href="CustomerDetails.html" data-ajax="false">Customer Details</a>
                 </li>
-                <li data-icon="ui-icon-blank">
+                <li data-icon="">
                     <a href="Orders.html" data-ajax="false">Orders</a>
                 </li>
             </ul>
