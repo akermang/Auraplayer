@@ -15,6 +15,7 @@
     <meta name="Created-By" content="manager">
     <meta name="Creation-Timestamp" content="1523364293906">
     <!-- CSS imports -->
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="../../res/jqueryMobile/jquery.mobile.theme-1.4.5.min.css">
     <link rel="stylesheet" href="../../res/jqueryUi/jquery-ui-1.10.1.custom.min.css">
@@ -45,9 +46,6 @@
         <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed">
             <div class="container-fluid">
                 <div class="row">
-                    <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
-                        <h3 class="text-white"><img class="action-img" src="./assets/img/ActionIcon.png" alt=""></h3>
-                    </a>
                     <div class="logo-link-wraper pad-size-1 col-xs-1">
                         <a href="javascript:navigate('Login.html')">
                             <img class="logo-link-img-sm" src="../../www/img/logo4.png">
@@ -55,6 +53,13 @@
                     </div>
                     <div class="col-xs-9 pad-size-1">
                         <h3 class="text-center" id="pageTitle">Customer List</h3>
+                    </div>
+                    <div class="action-hamburger">
+                        <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
+                            <h3 class="text-white">
+                                <img class="action-img" src="./assets/img/ActionIcon.png" alt="">
+                            </h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -91,11 +96,11 @@
                 </div>
             </div>
         </div>
-        <!-- left panel -->
-        <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true">
+        <!-- navigation panel -->
+        <div id="leftpanel" data-role="panel" data-display="overlay" data-position="right" data-position-fixed="true">
             <span id="hamburger-title">Menu</span>
-            <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
-            <ul class="margin-top-45" data-role="listview">
+            <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-r ui-btn-icon-left" data-rel="close"></a>
+            <ul data-role="listview" style="margin-top: 45px">
                 <li data-icon="ui-icon-blank">
                     <a href="Login.html" data-ajax="false">Login</a>
                 </li>

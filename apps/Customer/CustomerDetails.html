@@ -48,11 +48,11 @@
     <div data-role="header" id="header" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed">
       <div class="container-fluid">
         <div class="row">
-          <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
+          <!-- <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
             <h3 class="text-white">
               <img class="action-img" src="./assets/img/ActionIcon.png" alt="">
             </h3>
-          </a>
+          </a> -->
           <div class="logo-link-wraper pad-size-1 col-xs-1">
             <a href="javascript:navigate('Login.html')">
               <img class="logo-link-img-sm" src="../../www/img/logo4.png">
@@ -61,6 +61,13 @@
           <div class="col-xs-9 pad-size-1">
             <h3 class="text-center" id="pageTitle">Customer Details</h3>
           </div>
+          <div class="action-hamburger">
+            <a id="titleRow-button" href="#leftpanel" class="ui-btn text-white action-a">
+                <h3 class="text-white">
+                    <img class="action-img" src="./assets/img/ActionIcon.png" alt="">
+                </h3>
+            </a>
+        </div>
         </div>
       </div>
     </div>
@@ -215,24 +222,25 @@
         </div>
       </div>
     </div>
-    <div id="leftpanel" data-role="panel" data-display="overlay" data-position-fixed="true">
+    <!-- navigation panel -->
+    <div id="leftpanel" data-role="panel" data-display="overlay" data-position="right" data-position-fixed="true">
       <span id="hamburger-title">Menu</span>
-      <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-rel="close"></a>
-      <ul data-role="listview" class="margin-top-45">
-        <li data-icon="ui-icon-blank">
-          <a href="Login.html" data-ajax="false">Login</a>
-        </li>
-        <li data-icon="ui-icon-blank">
-          <a href="CustomerList.html" data-ajax="false">Customer List</a>
-        </li>
-        <li data-icon="ui-icon-blank">
-          <a href="CustomerDetails.html" data-ajax="false">Customer Details</a>
-        </li>
-        <li data-icon="ui-icon-blank">
-          <a href="Orders.html" data-ajax="false">Orders</a>
-        </li>
+      <a href="#" id="hamburger-close" class="ui-btn ui-icon-carat-r ui-btn-icon-left" data-rel="close"></a>
+      <ul data-role="listview" style="margin-top: 45px">
+          <li data-icon="ui-icon-blank">
+              <a href="Login.html" data-ajax="false">Login</a>
+          </li>
+          <li data-icon="ui-icon-blank">
+              <a href="CustomerList.html" data-ajax="false">Customer List</a>
+          </li>
+          <li data-icon="ui-icon-blank">
+              <a href="CustomerDetails.html" data-ajax="false">Customer Details</a>
+          </li>
+          <li data-icon="ui-icon-blank">
+              <a href="Orders.html" data-ajax="false">Orders</a>
+          </li>
       </ul>
-    </div>
+  </div>
     <!-- Info popup - single OK button -->
     <div class="max-w-400" data-role="popup" id="infoPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false">
       <div data-role="header" data-theme="a">

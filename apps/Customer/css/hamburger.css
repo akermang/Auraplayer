@@ -12,6 +12,11 @@
 	color: #f7f7f7!important;
 }
 
+.action-hamburger {
+	position: absolute;
+    right: 5px;
+}
+
 .action-a .action-img {
 	width: 20px;
 	vertical-align: initial;
