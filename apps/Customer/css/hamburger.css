@@ -1,7 +1,11 @@
 #leftpanel {
-	background-color: #f9f9f9;
-	opacity: 0.9;
+	opacity: 0.98;
 	filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#leftpanel ul li a {
+	background-color: #fdfefe;
+	color: #325d5d;
 }
 
 #titleRow-button {
