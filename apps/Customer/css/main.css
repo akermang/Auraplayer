@@ -26,7 +26,11 @@
 }
 
 .primary-color {
-    background-color: #329999;
+    background-color: #329999!important;
+}
+
+.seconed-color{
+    color: #ffffff!important;
 }
 
 .cont-center {
