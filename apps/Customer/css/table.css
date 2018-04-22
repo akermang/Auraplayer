@@ -20,7 +20,7 @@
     border: 1px solid #FFF;
     background-color: #329999;
     color: #FFF;
-    padding: 1em;
+    padding: .5em;
 }
 
 .responstable th:first-child {
@@ -47,7 +47,13 @@
     padding: 1em;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 642px){
+    .responstable th{
+        padding: .6em;
+    }
+}
+
+@media (max-width: 560px) {
     .responstable th,
     .responstable td {
         display: table-cell;
