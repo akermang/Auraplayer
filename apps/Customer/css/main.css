@@ -326,6 +326,21 @@ html head+body .ui-btn.ui-btn-b:hover {
     ul.width-xs-51 li div[class*=ui-block] {
         width: 100% !important;
     }
+
+    ul.bordered-full {
+    border: none;
+    /* border-radius: 7px; */
+    box-shadow: none;
+    padding: 0;
+    }
+
+    .ui-content-pad {
+        padding: 1em 0.3em !important;
+    }
+
+    .pad-0-mobile{
+        padding: 0!important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -333,13 +348,20 @@ html head+body .ui-btn.ui-btn-b:hover {
         margin-left: 100px;
         text-align: center !important;
     }
-    .ui-content-pad {
-        padding: 1em 0.3em !important;
+
+    ul li a {
+        border-radius: 17px!important;
+        margin-bottom: 2px!important;
     }
+   
 }
 
 @media(max-width: 400px) {
     img.logo-link-img-sm {
         width: 95px;
+    }
+
+    h3{
+        font-size: small!important;
     }
 }
