@@ -352,6 +352,8 @@ html head+body .ui-btn.ui-btn-b:hover {
     ul li a {
         border-radius: 17px!important;
         margin-bottom: 2px!important;
+        border-bottom: 2px solid #329999!important;
+        box-shadow:  1px 3px rgba(0, 0, 0, .2)!important;
     }
    
 }
