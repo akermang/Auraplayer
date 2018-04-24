@@ -22,6 +22,15 @@
     padding: 12px 8px;
 }
 
+.pad-b-size-1 {
+    padding-bottom: 1em;
+}
+
+.pad-sides-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .border-r-size-1 {
     border-radius: 7px;
 }
@@ -358,6 +367,12 @@ html head+body .ui-btn.ui-btn-b:hover {
         margin-bottom: 2px!important;
         border-bottom: 2px solid #329999!important;
         box-shadow:  1px 3px rgba(0, 0, 0, .2)!important;
+    }
+
+    .bordered-full {
+        border: none;
+    border-radius: 7px;
+    box-shadow: none;
     }
    
 }
